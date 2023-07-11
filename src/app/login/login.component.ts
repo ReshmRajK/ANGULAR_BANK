@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  data="Happy Banking With Us...!Welcome To Net Banking With SBI"
+  pdata="Enter Account Number"
+
+  login(){
+    alert("Login Clicked")
+  }
 }

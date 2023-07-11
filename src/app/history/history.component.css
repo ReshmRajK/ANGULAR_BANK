@@ -1,0 +1,28 @@
+.main_Section{
+    height: 100vh;
+}
+.btn{
+    border-radius: 3rem;
+    border: 1px solid yellow;
+    border-left: 1px solid white;
+    background-color: darkblue;
+    color: white;
+}
+table {
+    border-spacing: 30px;
+    width: 100%;
+  }
+  h1{
+    font-family: 'Merriweather Sans', sans-serif; 
+  }
+  
+
+
+
+
+
+
+
+
+
+
