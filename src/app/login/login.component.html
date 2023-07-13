@@ -8,10 +8,10 @@
             <div class="col-lg-6 col-md-6 col-sm-6 login_section">
                 <form action="" class="mt-5">
                     <h1 class="text-center">Login Form</h1>
-                    <input type="text" id="user1" name="accNum1" class="form-control" [placeholder]="pdata">
-                    <input type="password" id="pswd1" name="passwoed1" class="form-control mt-3" placeholder="Enter password">
+                    <input #acno type="text" id="user1" name="accNum1" class="form-control" [placeholder]="pdata">
+                    <input #psw  type="password" id="pswd1" name="password1" class="form-control mt-3" placeholder="Enter password">
                     <div class="d-flex justify-content-center mt-3">
-                        <button (click)="login()" type="button" class="btn btn-primary">Login</button>
+                        <button (click)="login(acno,psw)" type="button" class="btn btn-primary">Login</button>
                     </div>
                     <p class="text-center mt-3">don't have account? <a href="">Create account</a></p>
                 </form>
