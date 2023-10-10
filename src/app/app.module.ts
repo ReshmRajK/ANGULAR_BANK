@@ -9,7 +9,12 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { HistoryComponent } from './history/history.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
+import { DatePipe } from '@angular/common';
+import { DeleteComponent } from './delete/delete.component';
+import { DataPipePipe } from './pipe/data-pipe.pipe';
+
 
 @NgModule({
   declarations: [
@@ -19,14 +24,21 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     SignupComponent,
     HomeComponent,
-    HistoryComponent
+    HistoryComponent,
+    DeleteComponent,
+    DataPipePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule 
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
